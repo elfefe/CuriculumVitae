@@ -1,1 +1,1 @@
-[Check the CV](../Curriculum%20Vitae.html)
+[Check the CV](../main/Curriculum%20Vitae.html)

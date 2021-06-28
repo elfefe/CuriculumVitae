@@ -86,7 +86,6 @@
       #body-container {
         align-self: center;
         display: inline-block;
-        max-width: 60vw;
       }
 
       #content {
@@ -188,7 +187,7 @@
       }
 
       /* For the example realy */
-      @media screen and (min-width: 736px) {
+      @media screen and (max-width: 736px) {
         #body-container {
           width: 100vw;
           max-width: 100vw;
@@ -872,9 +871,9 @@
       let skills = document.getElementById('skills');
       let lists = [...document.getElementsByTagName('DL')];
 
-      if (screen.width > 736) {
+      if (screen.width > 736 && window.innerWidth > 736) {
         content.style.width = null;
-        content.style.maxWidth = 70 + "vw";
+        content.style.maxWidth = null;
         
         skills.style.width = null;
 
